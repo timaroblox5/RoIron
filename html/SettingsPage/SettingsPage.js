@@ -938,17 +938,15 @@ page.settingsWaitingForGeneral = function() {
 								<h4 data-translate="sectionWhatRkis">What is RoIron?</h4>
 								<div>
 									<div data-translate="sectionWhatRkis1">RoIron is a broswer extenstion made by Ameer! to make roblox easier to use and more accessable.</div><br>
-									<a href="https://timaroblox5.github.io/roiron/" style="text-decoration: underline;" data-translate="sectionWhatRkis2">Click here for roiron site and privacy policy.</a>
+									<a href="https://timaroblox5.github.io/RoIron/" style="text-decoration: underline;" data-translate="sectionWhatRkis2">Click here for roiron site and privacy policy.</a>
 								</div>
 							</div>
 
 							<div class="section-content">
 								<h4 data-translate="sectionHelpNeed">Help!</h4>
 								<div>
-									<div data-translate="sectionHelpNeed1">if the extension have problems you can contact me on discord:</div>
-									<a href="https://discord.gg/uH47YYKEex">https://discord.gg/uH47YYKEex</a><br><br>
-									<div data-translate="sectionHelpNeed2">or message me on Roblox (Ameer_Khalid):</div>
-									<a href="https://www.roblox.com/messages/compose?recipientId=678363483">https://www.roblox.com/messages/compose?recipientId=678363483</a>
+									<div data-translate="sectionHelpNeed2">or message me on Roblox (MyLifeGoodAndBad):</div>
+									<a href="https://www.roblox.com/messages/compose?recipientId=499004729">https://www.roblox.com/messages/compose?recipientId=499004729</a>
 								</div>
 							</div>
 
@@ -1022,7 +1020,7 @@ page.settingsWaitingForGeneral = function() {
 								<h4 data-translate="changelogGithubTitle">Moved to Github</h4>
 								<div>
 									<div data-translate="changelogGithubDescription">All changes are listed on our open source github repository.</div><br>
-									<a href="https://github.com/AmeerDotEXE/roiron/commits/release" style="text-decoration: underline;" data-translate="changelogGithubRedirection">Click here to view full changelog.</a>
+									<a href="https://github.com/timaroblox5/RoIron/commits/release" style="text-decoration: underline;" data-translate="changelogGithubRedirection">Click here to view full changelog.</a>
 								</div>	
 							</div>
 						</div>
