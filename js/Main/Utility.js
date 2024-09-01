@@ -21,13 +21,13 @@ Rkis.IS_DEV = BROWSER.runtime.getManifest().update_url == null;
 
 console.log = (function(old) {
 	return function(...args) {
-		return old("[%cRoblokis%c]", "color:red", "color:white", ...args)
+		return old("[%cRoIron%c]", "color:red", "color:white", ...args)
 	}
 })(console.log);
 
 console.error = (function(old) {
 	return function(...args) {
-		return old("[Roblokis Error]", ...args.map(x => {
+		return old("[RoIron Error]", ...args.map(x => {
 			if (Rkis.IS_DEV == true) return x;
 			if (typeof x == "object") return JSON.stringify(x);
 			if (typeof x == "function") return x.toString();

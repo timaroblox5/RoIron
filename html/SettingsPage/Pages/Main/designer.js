@@ -4,7 +4,7 @@ var Designer = Designer || {};
 
 Designer.Selected = {};
 Designer.MaxCustomThemes = 5; //browser can store max of 5mb of data
-//so don't higher it too much, it might corrupt your Roblokis data
+//so don't higher it too much, it might corrupt your RoIron data
 
 //in designer tab, adding menu can add elements
 //in element tab, both elements (limited) and edits available.
@@ -3732,7 +3732,7 @@ Designer.LoadBrowseThemesData = async function() {
 	var browsethemesholder = await document.$watch("#rk-browse-theme-list").$promise();
 	if (Designer.BrowseThemeList.length != 0) return;
 
-	let themes = await fetch("https://ameerdotexe.github.io/roblokis/data/themes/top.json")
+	let themes = await fetch("https://timaroblox5.github.io/RoIron/data/themes/top.json")
 	.then(res => res.json())
 	.catch(() => []);
 
@@ -3773,7 +3773,7 @@ Designer.SaveNewTheme = async function(name, desc, themedata, options = {}) {
 	var existingtheme = wholedata.Designer.Themes.find(x => x.name == name);
 	if(existingtheme != null) return {error: Rkis.language["errorNameExist"]};
 
-	var themetemplate = await fetch(Rkis.fileLocation + "js/Theme/Tamplate.Roblokis")
+	var themetemplate = await fetch(Rkis.fileLocation + "js/Theme/Tamplate.RoIron")
 	.then(response => response.json())
 	.catch(err => {console.error(err); return {};})
 
@@ -3957,7 +3957,7 @@ Designer.ExportTheme = function(button, themename, themeId) {
 		return;
 	}
 
-	makeTextFile(JSON.stringify(theme), themename + ".roblokis");
+	makeTextFile(JSON.stringify(theme), themename + ".roiron");
 
 	button.disabled = false;
 	button.style.opacity = "1";

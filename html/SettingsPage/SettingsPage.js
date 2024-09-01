@@ -899,7 +899,7 @@ page.settingsWaitingForGeneral = function() {
 
 		mainplace.innerHTML = /*html*/`
 		<div id="rkmainpage">
-			<div id="rkmaintitle" style="text-align: center;font-weight: 800;font-size: 32px;margin: 1%;" data-translate="settingsPageTitle">Roblokis Settings Page</div>
+			<div id="rkmaintitle" style="text-align: center;font-weight: 800;font-size: 32px;margin: 1%;" data-translate="settingsPageTitle">RoIron Settings Page</div>
 			<div style="display: flex;justify-content: center;">
 				<div class="left-navigation">
 
@@ -935,10 +935,10 @@ page.settingsWaitingForGeneral = function() {
 							<h3><span data-translate="categoryMain">Main</span> &gt; <span data-translate="tabAbout">About</span></h3>
 
 							<div class="section-content">
-								<h4 data-translate="sectionWhatRkis">What is Roblokis?</h4>
+								<h4 data-translate="sectionWhatRkis">What is RoIron?</h4>
 								<div>
-									<div data-translate="sectionWhatRkis1">Roblokis is a broswer extenstion made by Ameer! to make roblox easier to use and more accessable.</div><br>
-									<a href="https://ameerdotexe.github.io/roblokis/" style="text-decoration: underline;" data-translate="sectionWhatRkis2">Click here for roblokis site and privacy policy.</a>
+									<div data-translate="sectionWhatRkis1">RoIron is a broswer extenstion made by Ameer! to make roblox easier to use and more accessable.</div><br>
+									<a href="https://timaroblox5.github.io/roiron/" style="text-decoration: underline;" data-translate="sectionWhatRkis2">Click here for roiron site and privacy policy.</a>
 								</div>
 							</div>
 
@@ -961,7 +961,7 @@ page.settingsWaitingForGeneral = function() {
 
 							<div class="section-content">
 								<h4 data-translate="sectionFeatures">Features:</h4>
-								<span class="text-description" data-translate="sectionFeatures1">Stuff Roblokis Can do</span>
+								<span class="text-description" data-translate="sectionFeatures1">Stuff RoIron Can do</span>
 								<div class="rbx-divider" style="margin: 12px;"></div>
 								<table class="table table-striped features-table" style="border-radius: 12px;">
 									<thead>
@@ -987,11 +987,11 @@ page.settingsWaitingForGeneral = function() {
 							</div>
 
 							<div class="section-content">
-								<h4>Roblokis Data</h4>
+								<h4>RoIron Data</h4>
 								<div>
-									<button class="btn-control-sm" id="download-roblokis-data">Export</button>
-									<button class="btn-control-sm" data-translate="btnDelete" id="delete-roblokis-data">Delete</button>
-									<label class="btn-control-sm">Import<input type="file" accept=".json" id="import-roblokis-data" hidden></label>
+									<button class="btn-control-sm" id="download-roiron-data">Export</button>
+									<button class="btn-control-sm" data-translate="btnDelete" id="delete-roiron-data">Delete</button>
+									<label class="btn-control-sm">Import<input type="file" accept=".json" id="import-roiron-data" hidden></label>
 								</div>
 							</div>
 						</div>
@@ -1022,7 +1022,7 @@ page.settingsWaitingForGeneral = function() {
 								<h4 data-translate="changelogGithubTitle">Moved to Github</h4>
 								<div>
 									<div data-translate="changelogGithubDescription">All changes are listed on our open source github repository.</div><br>
-									<a href="https://github.com/AmeerDotEXE/roblokis/commits/release" style="text-decoration: underline;" data-translate="changelogGithubRedirection">Click here to view full changelog.</a>
+									<a href="https://github.com/AmeerDotEXE/roiron/commits/release" style="text-decoration: underline;" data-translate="changelogGithubRedirection">Click here to view full changelog.</a>
 								</div>	
 							</div>
 						</div>
@@ -1133,7 +1133,7 @@ page.settingsWaitingForGeneral = function() {
 												<div class="rk-tab" page="emptytheme">Empty</div>
 												<div class="rk-tab is-active" page="imagetheme">Image</div>
 												<div class="rk-tab" page="importtheme">Import</div>
-												<a class="rk-tab" href="https://ameerdotexe.github.io/roblokis/themes/top/" target="_blank">Browse</a>
+												<a class="rk-tab" href="https://timaroblox5.github.io/roiron/themes/top/" target="_blank">Browse</a>
 											</div>
 											<div class="rk-tab-pages">
 												<div class="rk-tab-page" tab="emptytheme">
@@ -1156,9 +1156,9 @@ page.settingsWaitingForGeneral = function() {
 													</div>
 												</div>
 												<div class="rk-tab-page" tab="importtheme">
-													<input type="file" id="newtheme-file" accept=".roblokis" oninput="if(this.files.length > 0) this.parentElement.querySelector('label').textContent = this.files[0].name; else this.parentElement.querySelector('label').textContent = '${Rkis.language['themeImport']}'" hidden>
+													<input type="file" id="newtheme-file" accept=".roiron" oninput="if(this.files.length > 0) this.parentElement.querySelector('label').textContent = this.files[0].name; else this.parentElement.querySelector('label').textContent = '${Rkis.language['themeImport']}'" hidden>
 													<label id="newtheme-filename" for="newtheme-file" data-translate="themeImport">Import Theme</label>
-													<div id="newtheme-error" class="info" style="font-size: 12px;">NOTE: Only "Pre-made" Roblokis themes are accepted.<br>For Images: Upload image online and use it's link instead!</div>
+													<div id="newtheme-error" class="info" style="font-size: 12px;">NOTE: Only "Pre-made" RoIron themes are accepted.<br>For Images: Upload image online and use it's link instead!</div>
 													<div>
 														<button onclick="document.querySelector('#rk-createthemesection').style.display = 'none';" data-translate="btnCancel">Cancel</button>
 														<button class="designer-btn createthetheme rk-createbtn" data-translate="btnCreate">Create</button>
@@ -1795,19 +1795,19 @@ page.settingsWaitingForGeneral = function() {
 
 		page.start();
 
-		mainplace.querySelector(`#download-roblokis-data`).addEventListener('click', () => {
+		mainplace.querySelector(`#download-roiron-data`).addEventListener('click', () => {
 			let rawText = JSON.stringify(Rkis.wholeData);
-			makeTextFile(rawText, 'Raw Roblokis Data.json');
+			makeTextFile(rawText, 'Raw RoIron Data.json');
 		});
-		mainplace.querySelector(`#delete-roblokis-data`).addEventListener('click', () => {
-			let confirmation = confirm("WARNING: This can not be undone!\nContinuing will remove all your Roblokis information;\n-settings\n-themes\nare included, Continue?");
+		mainplace.querySelector(`#delete-roiron-data`).addEventListener('click', () => {
+			let confirmation = confirm("WARNING: This can not be undone!\nContinuing will remove all your RoIron information;\n-settings\n-themes\nare included, Continue?");
 			if (confirmation === true) {
 				Rkis.database.clearDatabase(confirmation);
 				location.reload();
 			}
 		});
-		mainplace.querySelector(`#import-roblokis-data`).addEventListener('change', async () => {
-			let fileInput = mainplace.querySelector(`#import-roblokis-data`);
+		mainplace.querySelector(`#import-roiron-data`).addEventListener('change', async () => {
+			let fileInput = mainplace.querySelector(`#import-roiron-data`);
 			let filedata = null;
 			try{
 				if(fileInput.files.length > 0) {
@@ -1919,7 +1919,7 @@ try {
 		if (Rkis != null && Rkis.Toast != null) {
 			Rkis.Toast('Error: '+ new String(err));
 		} else {
-			prompt(`A problem occured with Roblokis, Please report to the developers\nError Code:`, err.stack || new String(err));
+			prompt(`A problem occured with RoIron, Please report to the developers\nError Code:`, err.stack || new String(err));
 		}
 	}
 
@@ -1938,7 +1938,7 @@ async function enableExperimentsPage() {
 	let experimentslist = tabPage.querySelector('.experiments-list');
 
 	Rkis.wholeData.ExperimentsCSS = Rkis.wholeData.ExperimentsCSS || [];
-	let experimentsCSS = await BROWSER.runtime.sendMessage({about: 'getURLRequest', url: 'https://ameerdotexe.github.io/roblokis/data/experiments/css.json'}).catch(() => null);
+	let experimentsCSS = await BROWSER.runtime.sendMessage({about: 'getURLRequest', url: 'https://timaroblox5.github.io/roiron/data/experiments/css.json'}).catch(() => null);
 	if (experimentsCSS == null || experimentsCSS.experimentsCSS == null) return;
 	let experimentsList = experimentsCSS.experimentsCSS;
 	let saveTimeout = null;

@@ -12,7 +12,7 @@ var Rkis = {
 
 				//save to new database
 				await BROWSER.storage.local.set({
-					Roblokis: data
+					RoIron: data
 				}).catch(err => {
 					if (err == "Error: QUOTA_BYTES quota exceeded") {
 						Rkis.Toast("ERROR: not enough space to save your data.", 5000);
@@ -34,18 +34,18 @@ var Rkis = {
 					} catch {}
 
 					if (strigifiedData === null) return;
-					localStorage.setItem("Roblokis", strigifiedData);
+					localStorage.setItem("RoIron", strigifiedData);
 				}
 			},
 			async load() {
 				let data = null;
 
 				// load from new database
-				data = await BROWSER.storage.local.get('Roblokis');
+				data = await BROWSER.storage.local.get('RoIron');
 				if (typeof data === 'undefined') data = null;
 				else if (data === null) {}
 				else if (JSON.stringify(data) === '{}') data = null;
-				if (data !== null && typeof data.Roblokis !== 'undefined') data = data.Roblokis;
+				if (data !== null && typeof data.RoIron !== 'undefined') data = data.RoIron;
 
 				//load from old database
 				if (data === null) {
@@ -62,7 +62,7 @@ var Rkis = {
 
 				function loadFromOldDatabase() {
 					let oldData = null;
-					let rawOldData = localStorage.getItem("Roblokis");
+					let rawOldData = localStorage.getItem("RoIron");
 					if (rawOldData) {
 						try {
 							oldData = JSON.parse(rawOldData);
@@ -75,8 +75,8 @@ var Rkis = {
 				if (confirmation !== true) return false;
 
 				//clear old database
-				if (localStorage.getItem('Roblokis') !== null) {
-					localStorage.removeItem('Roblokis');
+				if (localStorage.getItem('RoIron') !== null) {
+					localStorage.removeItem('RoIron');
 				}
 
 				//clear new database
@@ -386,11 +386,11 @@ if (Rkis.ToastHolder == null || Rkis.ToastHolder == {}) {
 	document.firstElementChild.appendChild(Rkis.ToastHolder);
 };
 
-//open=roblokis
+//open=roiron
 (function () {
 	let weburl = window.location.href;
-	if (weburl.includes("open=roblokis")) {
-		window.location.replace(weburl.split("roblox.com/")[0] + "roblox.com/roblokis");
+	if (weburl.includes("open=roiron")) {
+		window.location.replace(weburl.split("roblox.com/")[0] + "roblox.com/roiron");
 	}
 })();
 
@@ -403,10 +403,10 @@ if (Rkis.ToastHolder == null || Rkis.ToastHolder == {}) {
 		if (stng.getAttribute("aria-describedby") != null) return;
 
 		let rkisbtn = document.createElement("li");
-		rkisbtn.innerHTML = `<a class="rbx-menu-item roblokis-settings-button" href="https://${escapeHTML(Rkis.SubDomain)}.roblox.com/roblokis" style="color: rgb(255,64,64);">Roblokis</a>`;
+		rkisbtn.innerHTML = `<a class="rbx-menu-item roiron-settings-button" href="https://${escapeHTML(Rkis.SubDomain)}.roblox.com/roiron" style="color: rgb(255,64,64);">RoIron</a>`;
 
 		let doc = await document.$watch("#settings-popover-menu").$promise();
-		if (doc == null || doc.querySelector(".roblokis-settings-button") != null) return;
+		if (doc == null || doc.querySelector(".roiron-settings-button") != null) return;
 		doc.insertBefore(rkisbtn, doc.firstElementChild);
 	});
 
@@ -418,10 +418,10 @@ if (Rkis.ToastHolder == null || Rkis.ToastHolder == {}) {
 //default features
 (async function () {
 	//Get default settings
-	// let defaultSettings = await fetch(`https://ameerdotexe.github.io/roblokis/data/settings/default.json`)
+	// let defaultSettings = await fetch(`https://ameerdotexe.github.io/roiron/data/settings/default.json`)
 	// 	.then(res => res.json()).catch(() => null);
 	// ! TODO - switch to background fetch
-	let defaultSettings = await BROWSER.runtime.sendMessage({about: 'getURLRequest', url: 'https://ameerdotexe.github.io/roblokis/data/settings/default.json'}).catch(() => null);
+	let defaultSettings = await BROWSER.runtime.sendMessage({about: 'getURLRequest', url: 'https://ameerdotexe.github.io/roiron/data/settings/default.json'}).catch(() => null);
 	if (defaultSettings == null) return;
 
 	await databaseLoading;
@@ -453,7 +453,7 @@ function getRndInteger(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//Function below is roblox's official theme changer simplified and integerated with roblokis
+//Function below is roblox's official theme changer simplified and integerated with roiron
 function changeRobloxTheme(themeType) {
 	let types = {
 		Classic: "light-theme",
@@ -569,15 +569,15 @@ databaseLoading.then(() => {
 				},
 				"en": {
 					name: "Use Roblox language",
-					description: "Limits Roblokis Language to Roblox Site Language."
+					description: "Limits RoIron Language to Roblox Site Language."
 				}
 			}
 		})) {
 			Rkis.robloxCode = localStorage.getItem("RobloxLocaleCode") || "en";
-			Rkis.roblokisCodes = { "pt": "pt_BR" };
+			Rkis.roironCodes = { "pt": "pt_BR" };
 	
 			Rkis.languageCode = Rkis.robloxCode.split("_")[0];
-			Rkis.languageCode = Rkis.roblokisCodes[Rkis.languageCode] || Rkis.languageCode;
+			Rkis.languageCode = Rkis.roironCodes[Rkis.languageCode] || Rkis.languageCode;
 	
 			// fetch(Rkis.fileLocation + `_locales/${Rkis.languageCode}/messages.json`)
 			// 	.then((res) => res.text())
@@ -680,18 +680,18 @@ databaseLoading.then(() => {
 	})();
 
 	document.$watch("body", (e) => {
-		e.classList.add("Roblokis-installed");
+		e.classList.add("RoIron-installed");
 
 
 		//CSS experiments
 		(async function () {
 			//apply external fixes
-			Rkis.Designer.addCSS(["https://ameerdotexe.github.io/roblokis/data/remoteFixes.css"], true);
+			Rkis.Designer.addCSS(["https://ameerdotexe.github.io/roiron/data/remoteFixes.css"], true);
 
 			//check if Rkis.wholeData.ExperimentsCSS has experiments enabled
 			if (Rkis.wholeData.ExperimentsCSS instanceof Array && Rkis.wholeData.ExperimentsCSS.length > 0) {
 				//get experimentsCSS from server
-				let experimentsCSS = await BROWSER.runtime.sendMessage({about: 'getURLRequest', url: 'https://ameerdotexe.github.io/roblokis/data/experiments/css.json'}).catch(() => null);
+				let experimentsCSS = await BROWSER.runtime.sendMessage({about: 'getURLRequest', url: 'https://ameerdotexe.github.io/roiron/data/experiments/css.json'}).catch(() => null);
 				if (experimentsCSS == null || experimentsCSS.experimentsCSS == null) return;
 				let experimentsList = experimentsCSS.experimentsCSS;
 

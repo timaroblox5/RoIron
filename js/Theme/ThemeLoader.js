@@ -5,26 +5,26 @@ Rkis.Designer = Rkis.Designer || {};
 Rkis.Designer.DefaultThemes = [
 	{
 		themeId: "0",
-		location: "js/Theme/DefaultDark.Roblokis",
+		location: "js/Theme/DefaultDark.RoIron",
 		name: "Default Dark Theme",
 		description: "Simple Design made to match default roblox.",
 		isDefault: true,
 	},
 	{
 		themeId: "1",
-		location: "js/Theme/DefaultLight.Roblokis",
+		location: "js/Theme/DefaultLight.RoIron",
 		name: "Default Light Theme",
 		description: "Simple Design made to match default roblox.",
 	},
 	{
 		themeId: "2",
-		location: "js/Theme/Default/Simple Gradient.Roblokis",
+		location: "js/Theme/Default/Simple Gradient.RoIron",
 		name: "Simple Gradient",
 		description: "Simple Red-Blue gradient theme",
 	},
 	{
 		themeId: "3",
-		location: "js/Theme/Default/Dark Shadow Theme.Roblokis",
+		location: "js/Theme/Default/Dark Shadow Theme.RoIron",
 		name: "Dark Shadow Theme",
 		description: "",
 	},
@@ -427,7 +427,7 @@ Rkis.Designer.SetupTheme = async function() {
 	}
 	})) {
 		putCSS(["js/Theme/Extras/extensions.css"]);
-		document.$watch("body", (e) => {e.classList.add("Roblokis-no-themes")});
+		document.$watch("body", (e) => {e.classList.add("RoIron-no-themes")});
 		return;
 	}
 
@@ -481,13 +481,13 @@ Rkis.Designer.SetupTheme = async function() {
 		if (continueloading == false) return;
 
 		if(Rkis.wholeData.isUsingLightTheme == true) {
-			await fetch(Rkis.fileLocation + "js/Theme/DefaultLight.Roblokis")
+			await fetch(Rkis.fileLocation + "js/Theme/DefaultLight.RoIron")
 			.then(response => response.json())
 			.then(theme => {Rkis.Designer.currentTheme = theme;})
 			.catch(err => {console.error(err);})
 		}
 		else {
-			await fetch(Rkis.fileLocation + "js/Theme/DefaultDark.Roblokis")
+			await fetch(Rkis.fileLocation + "js/Theme/DefaultDark.RoIron")
 			.then(response => response.json())
 			.then(theme => {Rkis.Designer.currentTheme = theme;})
 			.catch(err => {console.error(err);})

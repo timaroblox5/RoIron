@@ -198,7 +198,7 @@ Rkis.page.game = () => {
 						}
 					})
 					.catch(err => {
-						console.error(`[Roblokis Error]`, err);
+						console.error(`[RoIron Error]`, err);
 						console.error("GP74 (Couldn't get Servers)");
 					})
 			}
@@ -452,8 +452,8 @@ Rkis.page.game = () => {
 				if (buttonplace == null) return;
 				buttonplace.style.display = "none";
 
-				document.$find("#rbx-running-games").innerHTML += `<div class="rbx-running-games-footer roblokis-footer"><button type="button" class="btn-control-sm btn-full-width rbx-running-games-load-more">${Rkis.language["loadMore"]}</button></div>`;
-				buttonplace = document.$find("#rbx-running-games > div.rbx-running-games-footer.roblokis-footer");
+				document.$find("#rbx-running-games").innerHTML += `<div class="rbx-running-games-footer roiron-footer"><button type="button" class="btn-control-sm btn-full-width rbx-running-games-load-more">${Rkis.language["loadMore"]}</button></div>`;
+				buttonplace = document.$find("#rbx-running-games > div.rbx-running-games-footer.roiron-footer");
 
 				var pagecount = Math.floor((Rkis.Scripts.PageNav.totalServers.length || 0) / 10) + 1;
 
@@ -919,7 +919,7 @@ Rkis.page.game = () => {
 				var badgessection = await document.$watch(".rbx-body .game-badges-list > ul.stack-list").$promise();
 				if (badgessection == null) return console.error("didn't find badge place");
 				badgessection.innerHTML = "";
-				badgessection.classList.add("roblokis-badges-loaded");
+				badgessection.classList.add("roiron-badges-loaded");
 
 				for (var x = 0; x < 2; x++) {
 
