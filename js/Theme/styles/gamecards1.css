@@ -1,0 +1,169 @@
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container) {
+	min-height: 248px;
+}
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container).rk-has-quickjoinbtn {
+	min-height: 270px;
+}
+/* game name */
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container) .game-card-name {
+	height: 4ch;
+	margin-left: 6px;
+	margin-right: 6px;
+	width: auto;
+	text-align: center;
+}
+/* game details/friends/friend activity bar */
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link .game-card-info, .game-card-friend-activity {
+	position: relative;
+	/* min-height: 32px; */
+	margin: 3px 6px 6px !important;
+	width: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 4px;
+}
+/* image auto fit & cut */
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link .game-card-thumb-container img {
+	width: auto;
+	z-index: -1;
+	height: 100%;
+    position: absolute;
+}
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link .game-card-thumb-container {
+	display: grid;
+	justify-items: center;
+	overflow: hidden;
+}
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link .game-card-thumb-container .thumbnail-2d-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+    justify-content: center;
+	background: none;
+}
+/* design */
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link {
+	transition: var(--rk-basic-animations, all 300ms ease-in-out);
+	min-height: 200px;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end !important;
+	height: auto !important;
+}
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link:hover {
+	padding-top: 150px;
+	transform: scale(1.05);
+	/* padding-top: 156px;
+	width: calc(100% + 12px); */
+}
+body:not(.btr-profile) #games-carousel-page *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link:hover {
+	margin-left: -6px;
+}
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link .game-card-thumb-container {
+	transition: var(--rk-basic-animations, all 300ms ease-in-out);
+	height: 200px;
+	position: absolute;
+    top: 0;
+}
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link:hover .game-card-thumb-container {
+	height: 150px;
+	/* height: 162px;
+	width: calc(100% + 12px);
+	top: -6px; */
+}
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link .rk-quickgamejoin {
+	transition: var(--rk-basic-animations, all 300ms);
+	transform: none !important;
+	margin: 6px 6px 0 !important;
+	position: relative;
+	width: auto;
+	opacity: 0;
+}
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link:hover .rk-quickgamejoin {
+	opacity: 1;
+}
+/* *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link > *:not(.game-card-thumb-container) {
+	top: calc(-42px + -4ch);
+	position: relative;
+} */
+/* shadow for better text readability */
+body:not(.btr-profile) .game-card-thumb-container::before {
+	opacity: 0 !important;
+}
+body:not(.btr-profile) .game-card-thumb-container::after {
+	transition: var(--rk-basic-animations, all 300ms);
+	content: '';
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(transparent, hsl(0 0% 0% / 0.8));
+}
+body:not(.btr-profile).light-theme .game-card-thumb-container::after {
+	background: linear-gradient(transparent, hsl(0 0% 100% / 0.8));
+}
+body:not(.btr-profile) a:hover .game-card-thumb-container::after {
+	opacity: 0;
+}
+
+/* profile space for hover */
+body:not(.btr-profile) .game-carousel {
+	padding: 6px;
+}
+body:not(.btr-profile) .container-list.favorite-games-container ul.hlist.game-cards {
+	padding: 6px 6px 12px;
+}
+
+
+/* Rogold fixes */
+body:not(.btr-profile) #pinned-container .game-card-container {
+	width: 150px !important;
+	min-height: unset;
+}
+body:not(.btr-profile) #pinned-container .game-card-thumb-container {
+	height: 150px;
+}
+body:not(.btr-profile) #pinned-container .game-card-link {
+	/* min-height: 150px; */
+	/* add 6 for spacing */
+	min-height: 156px;
+}
+body:not(.btr-profile) #pinned-container .game-card-thumb-container::after {
+	background: transparent;
+}
+
+body:not(.btr-profile).gamecards-no-text .game-card-container:not(.featured-grid-item-container)>a.game-card-link .game-card-thumb-container {
+	z-index: 5;
+}
+
+body:not(.btr-profile).gamecards-no-text .game-card-thumb-container::after {
+	background: none;
+	box-shadow: inset 0 0 32px rgba(0,0,0,0.8);
+}
+
+/* RoPro fix most played section */
+#mostPlayedContainer > li > div > a.game-card-link {
+	min-height: 145px !important;
+	max-width: 90px !important;
+	padding: 0px !important;
+}
+#mostPlayedContainer .game-card-name {
+	height: auto !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+#mostPlayedContainer .game-card-thumb-container::after {
+	opacity: 0 !important;
+}
+#mostPlayedContainer .game-card-link .game-card-thumb-container .thumbnail-2d-container {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/* gamecard on discover/sortName fix wrong width */
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container),
+body:not(.btr-profile) *:not(.grid-tile):not(.event-tile) > .game-card-container:not(.featured-grid-item-container)>a.game-card-link {
+	max-width: 150px;
+	width: 150px;
+}

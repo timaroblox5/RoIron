@@ -1,0 +1,38 @@
+#container-main > div.content {
+	width: 90%;
+}
+
+#avatar-container {
+	width: 100%;
+}
+
+#horizontal-tabs,
+#avatar-container > div > div > div.right-panel.six-column > div.right-wrapper-placeholder.right-wrapper-placeholder-six-column > div:before,
+
+#avatar-container div.rbx-tabs-horizontal.rbx-tabs-horizontal-six-column > ul#horizontal-tabs > li.rbx-tab.six-tab > a,
+#clothing > recommendations > div > div > div.recommendations-container,
+
+#avatar-items-container > div.section-content-off {
+	background-color: transparent;
+}
+
+#recent-items-container > div.items-list.avatar-item-list > ul > li {
+	width: fit-content;
+}
+
+#avatar-container div[avatar-back] > div.avatar-back {
+	/* background */
+	background: var(--rk-avatareditor-background);
+	background-size: var(--rk-avatareditor-background-image-size);
+	
+	/* Border Radius */
+	border-radius: var(--rk-avatareditor-corners-radius, 12px);
+
+	/* Borders */
+	border-color: var(--rk-avatareditor-borders-color);
+	border-style: var(--rk-avatareditor-borders-style);
+	border-width: var(--rk-avatareditor-borders-size);
+
+	backdrop-filter: var(--rk-avatareditor-backdrop-filter);
+	box-shadow: var(--rk-avatareditor-box-shadow);
+}

@@ -1,0 +1,23 @@
+/*content*/
+@media (min-width: 992px) {
+	.inventory-panel-holder {
+		width: calc(100% - 375px);
+	}
+	.trade-inventory-panel {
+		width: 100%;
+	}
+	body #trades-container .trade-request-window .item-cards-stackable .item-card {
+		width: fit-content;
+	}
+}
+#container-main > div.content {
+	min-width: 75%;
+}
+
+#trades-container {
+	width: 100%;
+}
+
+#trade-row-scroll-container > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div.container-empty {
+	background-color: transparent;
+}

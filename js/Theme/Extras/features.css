@@ -1,0 +1,36 @@
+/* Copy Server link */
+li .game-server-details > span.rk-multi-button {
+	display: flex;
+	gap: 4px;
+}
+
+/* Quick Join Button */
+.rk-quickgamejoin {
+	margin: 4px 0 0;
+}
+.game-card-container .game-card-name {
+	margin-top: 4px;
+}
+
+/* Player Counter */
+#game-instances:has( .rk-plr-counter) li div.player-thumbnails-container:has(> .hidden-players-placeholder:not(.rk-plr-counter)):has(> *:nth-child(6)) > span:nth-last-child(2) {
+	display: none;
+}
+
+/* Avatar Status Ring */
+/*.avatar-container:has( a.avatar-status:not(.icon-game):not(.icon-online):not(.icon-studio)) {
+	--friend-status-color: hsl(0, 0%, 0%);
+}
+.avatar-container:has( .avatar-status.icon-game) {
+	--friend-status-color: hsl(148, 98%, 36%);
+}
+.avatar-container:has( .avatar-status.icon-online) {
+	--friend-status-color: hsl(202, 100%, 50%);
+}
+.avatar-container:has( .avatar-status.icon-studio) {
+	--friend-status-color: hsl(33, 98%, 49%);
+}*/
+.avatar-container.rk-status-ring .avatar thumbnail-2d.avatar-card-image {
+	border: 2px solid var(--friend-status-color) !important;
+	box-shadow: var(--friend-status-glow, var(--rk-avatar-box-shadow)) !important;
+}

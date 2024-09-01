@@ -1,0 +1,206 @@
+#header {
+	margin: 5px;
+	border: 0;
+	background: transparent;
+	backdrop-filter: none;
+	box-shadow: none;
+}
+.navbar-no-splitting #header {
+	margin: 10px;
+}
+
+#navigation {
+	top: 65px;
+	border-width: var(--rk-menu-borders-size);
+	margin-top: 0;
+}
+#container-main {
+	margin-top: 50px;
+}
+
+#header .container-fluid,
+#right-navigation-header {
+	display: flex;
+	align-items: center;
+}
+
+#header.rbx-header .rbx-navbar-header {
+	margin-left: 0;
+	margin-right: auto;
+	flex-shrink: 0;
+	padding: 0;
+}
+
+#header .container-fluid ul.nav.rbx-navbar.hidden-sm {
+	box-sizing: content-box;
+	margin-right: 10px;
+	max-width: 30rem;
+	width: auto;
+	height: 40px;
+	align-items: center;
+	margin: 0;
+	margin-right: 5px;
+	padding: 0 4px;
+}
+#header .container-fluid ul.nav.rbx-navbar.hidden-lg {
+	margin: 3px;
+	width: calc(100% - 6px);
+}
+
+#header .container-fluid ul.nav.rbx-navbar li a {
+	font-weight: 400 !important;
+	font-size: .95em;
+	opacity: .9;
+	padding: 4px 14px;
+	white-space: nowrap;
+}
+
+.navbar-no-splitting           #header .container-fluid,
+body:not(.navbar-no-splitting) #header .container-fluid ul.nav.rbx-navbar,
+body:not(.navbar-no-splitting) #right-navigation-header > div.navbar-search,
+body:not(.navbar-no-splitting) #right-navigation-header .nav.rbx-navbar-icon-group {
+	/* background */
+	background: var(--rk-menu-background);
+	background-size: var(--rk-menu-background-image-size);
+	
+	/* Border Radius */
+	border-radius: var(--rk-menu-corners-radius, 12px);
+
+	/* Borders */
+	border-color: var(--rk-menu-borders-color);
+	border-style: var(--rk-menu-borders-style);
+	border-width: var(--rk-menu-borders-size);
+
+	backdrop-filter: var(--rk-menu-backdrop-filter);
+	box-shadow: var(--rk-menu-box-shadow);
+}
+
+#right-navigation-header {
+	/* width: 50%; */
+	display: contents;
+}
+
+#right-navigation-header .navbar-search {
+    width: fit-content;
+    margin-top: 0;
+	transition: max-width 200ms ease;
+	background-color: transparent;
+}
+
+.navbar-no-splitting #right-navigation-header .navbar-search:hover::before {
+	content: ' ';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 36px;
+    background-color: rgba(128,128,128,0.2);
+    border-radius: var(--rk-menu-corners-radius, 8px);
+}
+
+#right-navigation-header .navbar-right {
+	margin-left: auto;
+	margin-right: 0px;
+}
+
+#right-navigation-header .nav.rbx-navbar-icon-group {
+	display: flex;
+}
+
+#right-navigation-header .rbx-navbar-right .age-bracket-label > a > span.avatar.avatar-headshot-xs {
+	margin: 0;
+}
+
+#right-navigation-header .rbx-navbar-right .age-bracket-label {
+	padding: 0;
+	margin-left: 6px;
+}
+
+#right-navigation-header .rbx-navbar-right .age-bracket-label > span,
+#right-navigation-header .rbx-navbar-right .age-bracket-label > a > span.age-bracket-label-username {
+	display: none;
+}
+
+#navbar-stream.notification-margins {
+	margin: 0;
+}
+
+/* moderenize searchbar */
+#navbar-search-input {
+	background: none;
+	border: 0;
+	height: 40px;
+	padding-left: 45px;
+}
+#header .input-group .input-group-btn .input-addon-btn {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+}
+.rbx-header .navbar-search .clear-search {
+	top: 10px;
+	right: 10px;
+}
+
+/* make hover effect */
+body .rbx-header .rbx-navbar li:hover {
+	border-bottom: 0 !important;
+	background-color: hsl(0 0% 50% / 0.25);
+	border-radius: var(--rk-menu-corners-radius, 8px);
+}
+
+/* perfectly center search */
+#rbx-body:not(.rk-hide-roblox-logo) #right-navigation-header > div.navbar-right.rbx-navbar-right,
+#rbx-body:not(.rk-hide-roblox-logo) #header.rbx-header .rbx-navbar-header {
+	width: 0px;
+}
+#rbx-body:not(.rk-hide-roblox-logo) #header.rbx-header .rbx-navbar-header {
+	display: flex;
+}
+
+@media (max-width: 991px) {
+	#header .container-fluid {
+		display: block;
+	}
+	#right-navigation-header {
+		width: auto;
+		display: block;
+	}
+	#right-navigation-header .navbar-search {
+		width: auto !important;
+	}
+}
+
+/* Search button option */
+.navbar-search-button .rbx-header .navbar-search:not(:focus-within) .clear-search {
+	opacity: 0;
+}
+.navbar-search-button .rbx-header .navbar-search:not(:focus-within) .clear-search,
+.navbar-search-button .rbx-header .navbar-search:not(:focus-within) .input-group .input-group-btn .input-addon-btn {
+	pointer-events: none;
+}
+.navbar-search-button .rbx-header .navbar-search:not(:focus-within) {
+	max-width: 40px !important;
+	box-sizing: content-box;
+}
+
+/* No nav buttons */
+.navbar-no-nav-buttons #header .container-fluid ul.nav.rbx-navbar {
+	display: none;
+}
+body:not(.navbar-no-nav-buttons) .rbx-header .navbar-search {
+	max-width: 350px;
+}
+
+.rk-hide-roblox-logo #header.rbx-header .rbx-navbar-header {
+	display: none;
+}
+.rk-hide-roblox-logo #navigation {
+	display: block;
+	visibility: visible;
+	width: 175px;
+}
+.rk-hide-roblox-logo #navigation > div {
+	width: 175px;
+}
