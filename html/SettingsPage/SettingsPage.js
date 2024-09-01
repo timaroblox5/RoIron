@@ -1131,7 +1131,7 @@ page.settingsWaitingForGeneral = function() {
 												<div class="rk-tab" page="emptytheme">Empty</div>
 												<div class="rk-tab is-active" page="imagetheme">Image</div>
 												<div class="rk-tab" page="importtheme">Import</div>
-												<a class="rk-tab" href="https://timaroblox5.github.io/roiron/themes/top/" target="_blank">Browse</a>
+												<a class="rk-tab" href="https://timaroblox5.github.io/RoIron/themes/top/" target="_blank">Browse</a>
 											</div>
 											<div class="rk-tab-pages">
 												<div class="rk-tab-page" tab="emptytheme">
@@ -1936,7 +1936,7 @@ async function enableExperimentsPage() {
 	let experimentslist = tabPage.querySelector('.experiments-list');
 
 	Rkis.wholeData.ExperimentsCSS = Rkis.wholeData.ExperimentsCSS || [];
-	let experimentsCSS = await BROWSER.runtime.sendMessage({about: 'getURLRequest', url: 'https://timaroblox5.github.io/roiron/data/experiments/css.json'}).catch(() => null);
+	let experimentsCSS = await BROWSER.runtime.sendMessage({about: 'getURLRequest', url: 'https://timaroblox5.github.io/RoIron/data/experiments/css.json'}).catch(() => null);
 	if (experimentsCSS == null || experimentsCSS.experimentsCSS == null) return;
 	let experimentsList = experimentsCSS.experimentsCSS;
 	let saveTimeout = null;
