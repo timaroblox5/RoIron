@@ -1,0 +1,28 @@
+/* this file used to fix css bugs without uploading the extension to google on each problem */
+
+/* fix for v 4.1.0.2 */
+html body.dark-theme {
+	--rbx-theme-txt-sec-color: #bdbebe;
+}
+html body.light-theme {
+	--rbx-theme-txt-sec-color: #7f7f7f;
+}
+
+/* forcefix for because class tag isn't applied right */
+/* note: added !important to overwrite ropro */
+#container-main > div.content:has(.expand-max-width) {
+    width: auto;
+    max-width: calc(100% - 20px) !important;
+	margin-right: 10px;
+}
+
+@media (min-width: 1688px) {
+    .home-expand-design #container-main > div.content {
+        margin-left: calc(20px + var(--menufloat-width, 170px)) !important;
+    }
+}
+
+/* fix rogold pinned servers centered */
+#pinned-container.game-cards {
+    display: block;
+}
