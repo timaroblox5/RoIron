@@ -13,7 +13,7 @@
 			},
 			"en": {
 				"name": "Use Roblox language",
-				"description": "Limits Roblokis Language to Roblox Site Language."
+				"description": "Limits RoIron Language to Roblox Site Language."
 			}
 		}
 	},
@@ -324,7 +324,7 @@
 			},
 			"en": {
 				"name": "New Badges Look & Load all",
-				"description": "Shows the new Style design by Ameer!\nloads first 100 badges automatically."
+				"description": "Shows the new Style design by Tima!\nloads first 100 badges automatically."
 			}
 		}
 	},
