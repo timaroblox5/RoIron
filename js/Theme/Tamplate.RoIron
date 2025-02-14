@@ -1,0 +1,164 @@
+{
+	"styles": {
+		"all": {
+			"menu": {
+				"type": "float",
+				"options": null
+			},
+			"navbar": {
+				"type": "float",
+				"options": {
+					"makeSearchBtn": true
+				}
+			},
+			"chat": {
+				"type": "bubble",
+				"options": null
+			},
+			"gamecards": {
+				"type": "",
+				"options": {
+					"centerText": true
+				}
+			}
+		},
+		"game": {
+			"badges": {
+				"type": "card",
+				"options": null
+			},
+			"servers": {
+				"type": "card",
+				"options": null
+			}
+		}
+	},
+	"pages": {
+		"all": {
+			"menu": {
+				"background": {
+					"color": "rgba(0,0,0,40%)",
+					"image": {
+						"link": "",
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed"
+					}
+				}
+			}
+		},
+		"game": {
+			"badge": {
+				"colors": {
+					"bright": "#ffffff",
+					"dark": "#bdbebe"
+				},
+				"background": {
+					"color": "rgba(0,0,0,40%)",
+					"image": {
+						"link": "",
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed"
+					}
+				}
+			},
+			"defaultserver": {
+				"background": {
+					"color": "rgba(0,0,0,40%)",
+					"image": {
+						"link": "",
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed"
+					}
+				},
+				"button": {
+					"corners": {
+						"all": {
+							"radius": "8px"
+						},
+						"top-left": {
+							"radius": null
+						},
+						"top-right": {
+							"radius": null
+						},
+						"bottom-right": {
+							"radius": null
+						},
+						"bottom-left": {
+							"radius": null
+						}
+					},
+					"borders": {
+						"all": {
+							"size": "1px",
+							"style": "solid",
+							"color": "rgba(189,190,190,100%)"
+						},
+						"top": null,
+						"left": null,
+						"bottom": null,
+						"right": null
+					}
+				}
+			},
+			"pagenav": {
+				"borders": {
+					"all": {
+						"size": "1px",
+						"style": "solid",
+						"color": "rgba(189,190,190,100%)"
+					},
+					"top": null,
+					"left": null,
+					"bottom": null,
+					"right": null
+				}
+			}
+		},
+		"users": {
+			"profile": {
+				"corners": {
+					"all": {
+						"radius": "16px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				}
+			}
+		},
+		"groups": {
+			"group": {
+				"corners": {
+					"all": {
+						"radius": "16px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				}
+			}
+		}
+	}
+}

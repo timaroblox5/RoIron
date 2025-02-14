@@ -1,0 +1,511 @@
+#game-detail-page > div.system-feedback {display: none;}
+#Leaderboard-Abp {margin-bottom: 1%;}
+
+
+/* Removes the server count text */
+#game-instances li .game-server-details > div.rbx-game-status:not(.server-info) {
+	display: none;
+}
+
+
+/* Btroblox Support */
+#game-detail-page > div.btr-game-main-container.section-content,
+#game-instances,
+#store {
+	background-color: transparent;
+}
+.btr-hide-ads div.content {
+	max-width: 100% !important;
+}
+
+
+/*game photo & button*/
+#game-details-carousel-container {
+	border-radius: 20px;
+	z-index: 10;
+	transition: transform 400ms;
+	transition-timing-function: cubic-bezier(0.25, 1.27, 0.9, 1.01);
+}
+#game-details-carousel-container:hover {
+	transform: var(--rk-basic-animations, scale(1.06) rotate(1deg));
+}
+.dark-theme #game-details-play-button-container > button {
+	background: var(--rk-gameplay-background, none);
+	border-style: var(--rk-gameplay-borders-style, solid);
+	border-width: var(--rk-gameplay-borders-size, 2px);
+}
+#game-details-play-button-container > button {
+	background: var(--rk-gameplay-background, #00b06f);
+	background-size: var(--rk-gameplay-background-image-size);
+	
+	border-radius: var(--rk-gameplay-corners-radius, 8px);
+
+	border-color: var(--rk-gameplay-borders-color);
+	border-style: var(--rk-gameplay-borders-style);
+	border-width: var(--rk-gameplay-borders-size);
+
+	backdrop-filter: var(--rk-gameplay-backdrop-filter);
+	box-shadow: var(--rk-gameplay-box-shadow);
+}
+#game-details-play-button-container > button {
+	transition: transform 500ms;
+	transition-timing-function: cubic-bezier(0.25, 1.27, 0.9, 1.01);
+}
+#game-details-play-button-container > button:hover {
+	transform: var(--rk-basic-animations, scale(1.08) rotate(-2deg));
+}
+/* fix icon being sized wrongly when using custom icons */
+#rbx-body .btn-common-play-game-lg span.icon-robux-white {
+	background-position: 0 -36px;
+}
+
+
+
+/* fix buttons under playbutton being squished by rogold */
+.favorite-follow-vote-share li.game-pin-button-container,
+.favorite-follow-vote-share li.game-favorite-button-container,
+.favorite-follow-vote-share li.game-follow-button-container {
+	width: auto !important;
+}
+.favorite-follow-vote-share {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .game-follow-button-container .follow-button {
+	width: auto;
+}
+
+
+/*section tabs*/
+#horizontal-tabs {
+	background-color: rgb(35, 37, 39, 0.3);
+	border-radius: 10px;
+}
+#horizontal-tabs > li > a {
+	background-color: rgb(35, 37, 39, 0);
+	margin: 0px 10px 5px;
+	transition: all 200ms;
+	transition-timing-function: cubic-bezier(0.25, 1.27, 0.9, 1.01);
+}
+
+/*coloring*/
+div.section.game-about-container > div.section-content > ul.game-stats-container,
+div > .social-link > div.medallion
+{border-color: #fff;}
+
+
+/*game card*/
+div.container-list.games-detail div.game-card-container > a > a {
+	transition: transform 400ms;
+	transition-timing-function: cubic-bezier(0.21, 1.46, 0.99, 0.99);
+}
+div.container-list.games-detail div.game-card-container > a:hover > a {
+	transform: var(--rk-basic-animations, scale(1.12) rotate(5deg));
+}
+
+
+
+
+
+/*  Badges	  */
+.rbx-body .game-badges-list > ul.stack-list > li.badge-row,
+.new-badges-list .new-badges-list-container .badge-container {
+	border-radius: var(--rk-badge-corners-radius, 20px);
+
+	border-color: var(--rk-badge-borders-color);
+	border-style: var(--rk-badge-borders-style);
+	border-width: var(--rk-badge-borders-size);
+
+	background: var(--rk-badge-background);
+	background-size: var(--rk-badge-background-image-size);
+
+	backdrop-filter: var(--rk-badge-backdrop-filter);
+	box-shadow: var(--rk-badge-box-shadow);
+}
+/* roseal's badge tab designing */
+.new-badges-list .new-badges-list-container .badge-container {
+	overflow: hidden;
+}
+.rbx-body .game-badges-list > ul.stack-list > li.badge-row {
+	max-height: unset;
+	
+	transition: all 400ms;
+	transition-timing-function: cubic-bezier(0.21, 1.46, 0.99, 0.99);
+}
+.rbx-body .game-badges-list > ul.stack-list > li.badge-row:hover {
+	transform: var(--rk-basic-animations, scale(1.1));
+	opacity: var(--rk-basic-animations, 1);
+	z-index: var(--rk-basic-animations, 10);
+}
+
+.rbx-body .game-badges-list > ul.stack-list > li > div.badge-image > a > thumbnail-2d > span,
+body#rbx-body .new-badges-list, #badges-section .badge-sorts-filters-container,
+#badges[role="tabpanel"] {
+	background-color: transparent;
+}
+
+.rbx-body .game-badges-list > ul.stack-list > li > div.badge-content {
+	color: var(--rk-badge-bright-color);
+}
+
+.rbx-body .game-badges-list > ul.stack-list > li > div.badge-content > div > p {
+	color: var(--rk-badge-dark-color, #bdbebe) !important;
+}
+
+.rbx-body .game-badges-list > ul.stack-list > li > div.badge-content> ul > li > div.text-label {
+	color: var(--rk-badge-dark-color);
+}
+
+.game-badges-list > li {
+	margin-top: 0.5rem;
+}
+
+.btr-badges-container .badge-row .badge-content > * {
+	width: 50%;
+}
+
+
+
+
+div.section-content-off {
+	background-color: transparent !important;
+}
+
+
+
+
+/* Default Servers  */
+
+#game-instances #running-game-instances-container .card-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.server-list-section > div.section > div,
+#game-instances ul.card-list > li > div.card-item {
+	background-color: transparent;
+}
+#game-instances ul.card-list > li > div.card-item {
+	padding: 0 !important;
+	min-height: 0 !important;
+}
+
+#game-instances ul.card-list li div.server-player-count-gauge {
+	margin: 0px 0 4px;
+}
+
+
+
+
+/* Private Servers  */
+#rbx-private-running-games {
+	overflow: visible;
+}
+#rbx-private-running-games > ul {
+	row-gap: 0px;
+	column-gap: 0px;
+}
+
+#rbx-private-servers > div.rbx-private-server-item-container > p {
+	background-color: transparent;
+}
+
+#game-instances #rbx-private-running-games > ul > li {
+	transition: all 400ms;
+	transition-timing-function: cubic-bezier(0.21, 1.46, 0.99, 0.99);
+
+	margin: var(--rk-privateserver-gap, 0.3%);
+	color: var(--rk-privateserver-bright-color);
+
+	border-radius: var(--rk-privateserver-corners-radius, 20px);
+
+	border-color: var(--rk-privateserver-borders-color);
+	border-style: var(--rk-privateserver-borders-style);
+	border-width: var(--rk-privateserver-borders-size);
+
+	background: var(--rk-privateserver-background);
+	background-size: var(--rk-privateserver-background-image-size);
+
+	backdrop-filter: var(--rk-privateserver-backdrop-filter);
+	box-shadow: var(--rk-privateserver-box-shadow);
+}
+#rbx-private-running-games > ul > li:hover {
+	transform: var(--rk-basic-animations, scale(1.1));
+	opacity: var(--rk-basic-animations, 1);
+	z-index: var(--rk-basic-animations, 10);
+}
+
+#rbx-private-running-games > ul > li > div.card-item > div.rbx-private-game-server-details > span > * {
+	margin-top: 0 !important;
+	color: var(--rk-privateserver-button-color);
+
+
+	border-radius: var(--rk-privateserver-button-corners-radius, 8px);
+
+	border-color: var(--rk-privateserver-button-borders-color, white);
+	border-style: var(--rk-privateserver-button-borders-style, solid);
+	border-width: var(--rk-privateserver-button-borders-size, 1px);
+
+	background: var(--rk-privateserver-button-background, transparent);
+	background-size: var(--rk-privateserver-button-background-image-size);
+
+	backdrop-filter: var(--rk-privateserver-button-backdrop-filter);
+	box-shadow: var(--rk-privateserver-button-box-shadow);
+}
+
+#rbx-private-running-games ul li div.game-server-details > div.section-header > span {
+	font-size: 14px;
+	display: inline-block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+}
+
+#rbx-private-running-games > ul > li > div.card-item > div.rbx-private-game-server-details > div.rbx-private-owner > a.owner-avatar > img {
+	background-color: var(--rk-privateserver-owner-background, #d4d4d4);
+}
+
+html:not([data-btr-loaded="true"]) #rbx-private-running-games > ul > li > div.card-item > div.rbx-private-game-server-details > div.rbx-private-owner > a.text-name,
+#rbx-private-running-games > ul > li > div.card-item > div.rbx-private-game-server-details > div.rbx-private-server-subscription-alert {
+	display: none;
+}
+
+
+
+
+/* RoPro Support */
+#rbx-recent-server-box {
+	background-color: transparent;
+}
+
+#game-instances #rbx-recent-server-box > li {
+	border-radius: var(--rk-publicserver-corners-radius, 20px) !important;
+	
+	border-color: var(--rk-publicserver-borders-color);
+	border-style: var(--rk-publicserver-borders-style);
+	border-width: var(--rk-publicserver-borders-size);
+	
+	background: var(--rk-publicserver-background);
+	background-size: var(--rk-publicserver-background-image-size);
+
+	backdrop-filter: var(--rk-publicserver-backdrop-filter);
+	box-shadow: var(--rk-publicserver-box-shadow);
+}
+
+#rbx-game-server-item-container li div.rbx-game-server-details div.ropro-server-info.text-info {
+	display: inline;
+}
+
+
+
+
+/* BTRoblox Support */
+.btr-gamedetails .server-list-section:not(#rbx-private-running-games) .card-list .card-item {
+	width: auto;
+}
+
+
+
+
+/* Friends Servers  */
+#game-instances #rbx-friends-game-server-item-container > li {
+	transition: all 400ms;
+	transition-timing-function: cubic-bezier(0.21, 1.46, 0.99, 0.99);
+
+	width: calc(calc(100% / var(--rk-friendsserver-column, 4)) - calc(var(--rk-friendsserver-gap, 0.3%) * 2));
+	margin: var(--rk-friendsserver-gap, 0.3%);
+
+
+	border-radius: var(--rk-friendsserver-corners-radius, 20px);
+
+	border-color: var(--rk-friendsserver-borders-color);
+	border-style: var(--rk-friendsserver-borders-style);
+	border-width: var(--rk-friendsserver-borders-size);
+
+	background: var(--rk-friendsserver-background);
+	background-size: var(--rk-friendsserver-background-image-size);
+
+	backdrop-filter: var(--rk-friendsserver-backdrop-filter);
+	box-shadow: var(--rk-friendsserver-box-shadow);
+}
+#rbx-friends-game-server-item-container > li:hover {
+	transform: var(--rk-basic-animations, scale(1.2));
+	opacity: var(--rk-basic-animations, 1);
+	z-index: var(--rk-basic-animations, 10);
+}
+
+#rbx-friends-game-server-item-container li div.rbx-friends-game-server-details > span > * {
+	margin-top: 0 !important;
+	color: var(--rk-friendsserver-button-color);
+
+
+	border-radius: var(--rk-friendsserver-button-corners-radius, 8px);
+
+	border-color: var(--rk-friendsserver-button-borders-color, white);
+	border-style: var(--rk-friendsserver-button-borders-style, solid);
+	border-width: var(--rk-friendsserver-button-borders-size, 1px);
+
+	background: var(--rk-friendsserver-button-background, transparent);
+	background-size: var(--rk-friendsserver-button-background-image-size);
+
+	backdrop-filter: var(--rk-friendsserver-button-backdrop-filter);
+	box-shadow: var(--rk-friendsserver-button-box-shadow);
+}
+
+#rbx-friends-game-server-item-container li div.game-server-details > div.friends-in-server-label {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: var(--rk-friendsserver-dark-color);
+}
+
+
+
+
+
+/* Small Servers  */
+#game-instances #rbx-small-game-server-item-container > li {
+	display: block;
+	transition: all 400ms;
+	transition-timing-function: cubic-bezier(0.21, 1.46, 0.99, 0.99);
+
+	width: calc(calc(100% / var(--rk-smallserver-column, 4)) - calc(var(--rk-smallserver-gap, 0.3%) * 2));
+	margin: var(--rk-smallserver-gap, 0.3%);
+
+
+	border-radius: var(--rk-smallserver-corners-radius, 20px);
+
+	border-color: var(--rk-smallserver-borders-color);
+	border-style: var(--rk-smallserver-borders-style);
+	border-width: var(--rk-smallserver-borders-size);
+
+	background: var(--rk-smallserver-background);
+	background-size: var(--rk-smallserver-background-image-size);
+
+	backdrop-filter: var(--rk-smallserver-backdrop-filter);
+	box-shadow: var(--rk-smallserver-box-shadow);
+}
+#rbx-small-game-server-item-container > li:hover {
+	transform: var(--rk-basic-animations, scale(1.2));
+	opacity: var(--rk-basic-animations, 1);
+	z-index: var(--rk-basic-animations, 10);
+}
+
+#rbx-small-game-server-item-container li div.game-server-details > span > * {
+	margin-top: 0 !important;
+	color: var(--rk-smallserver-button-color);
+
+
+	border-radius: var(--rk-smallserver-button-corners-radius, 8px);
+
+	border-color: var(--rk-smallserver-button-borders-color, white);
+	border-style: var(--rk-smallserver-button-borders-style, solid);
+	border-width: var(--rk-smallserver-button-borders-size, 1px);
+
+	background: var(--rk-smallserver-button-background, transparent);
+	background-size: var(--rk-smallserver-button-background-image-size);
+
+	backdrop-filter: var(--rk-smallserver-button-backdrop-filter);
+	box-shadow: var(--rk-smallserver-button-box-shadow);
+}
+
+#game-instances #rbx-small-game-server-item-container > li[hidden] {
+	display: none !important;
+}
+
+
+
+
+
+/* Public Servers  */
+#game-instances #rbx-game-server-item-container > li {
+	transition: all 400ms;
+	transition-timing-function: cubic-bezier(0.21, 1.46, 0.99, 0.99);
+
+	display: list-item;
+	width: calc(calc(100% / var(--rk-publicserver-column, 4)) - calc(var(--rk-publicserver-gap, 0.3%) * 2));
+	margin: var(--rk-publicserver-gap, 0.3%);
+
+
+	border-radius: var(--rk-publicserver-corners-radius, 20px);
+
+	border-color: var(--rk-publicserver-borders-color);
+	border-style: var(--rk-publicserver-borders-style);
+	border-width: var(--rk-publicserver-borders-size);
+
+	background: var(--rk-publicserver-background);
+	background-size: var(--rk-publicserver-background-image-size);
+
+	backdrop-filter: var(--rk-publicserver-backdrop-filter);
+	box-shadow: var(--rk-publicserver-box-shadow);
+}
+#rbx-game-server-item-container > li:hover {
+	transform: var(--rk-basic-animations, scale(1.2));
+	opacity: var(--rk-basic-animations, 1);
+	z-index: var(--rk-basic-animations, 10);
+}
+
+#rbx-game-server-item-container li div.game-server-details a,
+#rbx-game-server-item-container li div.game-server-details button {
+	margin-top: 0 !important;
+	color: var(--rk-publicserver-button-color);
+
+
+	border-radius: var(--rk-publicserver-button-corners-radius, 8px);
+
+	border-color: var(--rk-publicserver-button-borders-color, white);
+	border-style: var(--rk-publicserver-button-borders-style, solid);
+	border-width: var(--rk-publicserver-button-borders-size, 1px);
+
+	background: var(--rk-publicserver-button-background, transparent);
+	background-size: var(--rk-publicserver-button-background-image-size);
+
+	backdrop-filter: var(--rk-publicserver-button-backdrop-filter);
+	box-shadow: var(--rk-publicserver-button-box-shadow);
+}
+
+#rbx-game-server-item-container.pagenav > li:not(.pagenav) {
+	display: none;
+}
+
+
+
+
+
+/* Page Nav  */
+#rbx-running-games > div.rbx-running-games-footer > button,
+#rbx-running-games > div.ropro-running-games-footer > button,
+#rbx-running-games > div.btr-server-pager > ul.btr-pager > li > button,
+#rbx-small-running-games > button,
+#rbx-private-running-games > div > button,
+#rkpagenav > * {
+	border-radius: var(--rk-pagenav-corners-radius, 8px);
+
+	border-color: var(--rk-pagenav-borders-color, white);
+	border-style: var(--rk-pagenav-borders-style, solid);
+	border-width: var(--rk-pagenav-borders-size, 1px);
+
+	background: var(--rk-pagenav-background);
+	background-size: var(--rk-pagenav-background-image-size);
+
+	backdrop-filter: var(--rk-pagenav-backdrop-filter);
+	box-shadow: var(--rk-pagenav-box-shadow);
+}
+
+#rbx-running-games > div.rbx-running-games-footer > button,
+#rbx-running-games > div.ropro-running-games-footer > button,
+#rbx-running-games > div.btr-server-pager > ul.btr-pager > li > span,
+#rbx-running-games > div.btr-server-pager > ul.btr-pager > li > span > span,
+#rbx-small-running-games > button,
+#rbx-private-running-games > div > button,
+#rkpagenav > *, #rkpagenav > * > * {
+	color: var(--rk-pagenav-color);
+}
+
+
+
+/* no players style */
+.servers-no-players #game-instances ul.card-list li .player-thumbnails-container {
+	display: none;
+}

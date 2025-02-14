@@ -1,0 +1,89 @@
+#container-main > div.content {
+    margin-left: auto;
+}
+
+/* seems to fix narrow bug from roblox update*/
+/* #HomeContainer {
+	max-width: 978px;
+    min-width: unset;
+    width: min(970px, 100%) !important;
+} */
+ /* #container-main > div.content {
+	max-width: 100%;
+	min-width: unset;
+	width: min(1336px, 100%) !important;
+} */
+/* fix cars going to second row when using expand-home-content by roblox */
+/* .game-carousel.expand-home-content {
+	grid-column-gap: 12px;
+} */
+
+/*shadows*/
+#home-header a.avatar {
+	transition: all 400ms;
+	transition-timing-function: cubic-bezier(0.21, 1.46, 0.99, 0.99);
+}
+#home-header a.avatar:hover {transform: var(--rk-basic-animations, scale(1.2));}
+/* body#rbx-body .avatar .avatar-card-image {background-color: transparent;} */
+
+#home-header div.user-info-container > h1 > a {
+	transition: all 400ms;
+	transition-timing-function: cubic-bezier(0.21, 1.46, 0.99, 0.99);
+}
+#home-header div.user-info-container > h1 > a:hover {transform: var(--rk-basic-animations, translate(24%, 0px) scale(1.5));}
+
+/* div.section-content.people-list div.avatar * {background: none;} */
+
+div.section-content.people-list li.list-item.friend div.avatar,
+div.section-content.people-list li.list-item.friend span.avatar-status {
+	transition: all 400ms;
+	transition-timing-function: cubic-bezier(0.21, 1.46, 0.99, 0.99);
+}
+div.section-content.people-list li.list-item.friend:hover div.avatar,
+div.section-content.people-list li.list-item.friend:hover span.avatar-status {
+	transform: var(--rk-basic-animations, scale(1.2));
+	z-index: var(--rk-basic-animations, 10);
+}
+div.section-content.people-list li.list-item.friend span.avatar-status {
+	top: 62px;
+}
+
+#holder > div > div {
+	background-color: transparent;
+}
+
+
+
+/* fixes hover cuts */
+.game-carousel {
+	padding: 6px;
+	box-sizing: content-box;
+}
+body .section .people-list {
+	overflow: hidden;
+}
+
+
+/* fix narrow body by btroblox */
+#rbx-body.btr-hide-ads .content {
+	max-width: unset;
+}
+
+.home-expand-design #container-main > div.content {
+    width: auto;
+	max-width: calc(100% - 20px);
+}
+
+@media (min-width: 1688px) {
+	.home-expand-design #container-main > div.content {
+		margin-left: calc(20px + var(--menufloat-width));
+		max-width: calc(100% - var(--menufloat-width) - 30px);
+	}
+}
+
+
+/* fix friends peeking at the bottom of the section by btroblox */
+.btr-home-showUsername .people-list-container .people-list .friend,
+.btr-home-secondRow .people-list-container .people-list .friend {
+	margin-bottom: 6px;
+}

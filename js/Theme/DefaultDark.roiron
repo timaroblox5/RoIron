@@ -1,0 +1,390 @@
+{
+	"styles": {
+		"all": {
+			"menu": {
+				"type": "float",
+				"options": null
+			},
+			"navbar": {
+				"type": "float",
+				"options": {
+					"connectedIslands": false,
+					"hideRobloxLogo": false,
+					"hideNavBtns": false,
+					"makeSearchBtn": true,
+					"searchbarLength": "25"
+				}
+			},
+			"chat": {
+				"type": "bubble",
+				"options": null
+			},
+			"gamecards": {
+				"type": "",
+				"options": {
+					"centerText": true,
+					"showjointext": false
+				}
+			}
+		},
+		"game": {
+			"badges": {
+				"type": "card",
+				"options": null
+			},
+			"servers": {
+				"type": "card",
+				"options": {
+					"hidePlayers": false
+				}
+			}
+		}
+	},
+	"pages": {
+		"all": {
+			"menu": {
+				"background": {
+					"color": "rgba(25,27,29,100%)",
+					"image": {
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed",
+						"link": ""
+					}
+				},
+				"corners": {
+					"all": {
+						"radius": "12px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				}
+			},
+			"background": {
+				"color": "rgba(35,37,39,100%)",
+				"image": {
+					"size": "contain",
+					"repeat": "round",
+					"attachment": "fixed",
+					"link": ""
+				}
+			},
+			"content": {
+				"background": {
+					"color": "rgba(35,37,39,0%)",
+					"image": {
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed",
+						"link": ""
+					}
+				}
+			},
+			"gamesection": {
+				"background": {
+					"color": "rgba(25,27,29,100%)",
+					"image": {
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed",
+						"link": ""
+					}
+				},
+				"corners": {
+					"all": {
+						"radius": "12px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				}
+			},
+			"peoplesection": {
+				"background": {
+					"color": "rgba(25,27,29,100%)",
+					"image": {
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed",
+						"link": ""
+					}
+				},
+				"corners": {
+					"all": {
+						"radius": "12px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				}
+			}
+		},
+		"game": {
+			"badge": {
+				"colors": {
+					"bright": "#ffffff",
+					"dark": "#bdbebe"
+				},
+				"background": {
+					"color": "rgba(57,59,61,80%)",
+					"image": {
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed",
+						"link": ""
+					}
+				},
+				"corners": {
+					"all": {
+						"radius": "20px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				},
+				"borders": {
+					"all": {
+						"size": "0px",
+						"style": "solid",
+						"color": "rgba(255,255,255,100%)"
+					},
+					"top": null,
+					"left": null,
+					"bottom": {
+						"size": "1px",
+						"style": "solid",
+						"color": "rgba(255,255,255,100%)"
+					},
+					"right": {
+						"size": "1px",
+						"style": "solid",
+						"color": "rgba(255,255,255,100%)"
+					}
+				}
+			},
+			"defaultserver": {
+				"background": {
+					"color": "rgba(57,59,61,80%)",
+					"image": {
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed",
+						"link": ""
+					}
+				},
+				"button": {
+					"corners": {
+						"all": {
+							"radius": "8px"
+						},
+						"top-left": {
+							"radius": null
+						},
+						"top-right": {
+							"radius": null
+						},
+						"bottom-right": {
+							"radius": null
+						},
+						"bottom-left": {
+							"radius": null
+						}
+					},
+					"borders": {
+						"all": {
+							"size": "1px",
+							"style": "solid",
+							"color": "rgba(189,190,190,100%)"
+						},
+						"top": null,
+						"left": null,
+						"bottom": null,
+						"right": null
+					}
+				},
+				"corners": {
+					"all": {
+						"radius": "20px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				},
+				"borders": {
+					"all": {
+						"size": "0px",
+						"style": "solid",
+						"color": "rgba(255,255,255,100%)"
+					},
+					"top": null,
+					"left": null,
+					"bottom": {
+						"size": "1px",
+						"style": "solid",
+						"color": "rgba(255,255,255,100%)"
+					},
+					"right": {
+						"size": "1px",
+						"style": "solid",
+						"color": "rgba(255,255,255,100%)"
+					}
+				}
+			},
+			"pagenav": {
+				"borders": {
+					"all": {
+						"size": "1px",
+						"style": "solid",
+						"color": "rgba(189,190,190,100%)"
+					},
+					"top": null,
+					"left": null,
+					"bottom": null,
+					"right": null
+				},
+				"corners": {
+					"all": {
+						"radius": "8px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				},
+				"background": {
+					"color": "rgba(35,37,39,0%)",
+					"image": {
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed",
+						"link": ""
+					}
+				},
+				"color": "rgb(255,255,255)"
+			},
+			"privateserver": {
+				"color": "rgb(255,255,255)"
+			},
+			"friendsserver": {
+				"color": "rgb(255,255,255)"
+			}
+		},
+		"users": {
+			"profile": {
+				"corners": {
+					"all": {
+						"radius": "16px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				},
+				"background": {
+					"color": "rgba(57,59,61,100%)",
+					"image": {
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed",
+						"link": ""
+					}
+				}
+			}
+		},
+		"groups": {
+			"group": {
+				"corners": {
+					"all": {
+						"radius": "16px"
+					},
+					"top-left": {
+						"radius": null
+					},
+					"top-right": {
+						"radius": null
+					},
+					"bottom-right": {
+						"radius": null
+					},
+					"bottom-left": {
+						"radius": null
+					}
+				},
+				"background": {
+					"color": "rgba(57,59,61,100%)",
+					"image": {
+						"size": "contain",
+						"repeat": "round",
+						"attachment": "fixed",
+						"link": ""
+					}
+				}
+			}
+		}
+	},
+	"name": "Default Dark Theme",
+	"description": "",
+	"isDark": true
+}
